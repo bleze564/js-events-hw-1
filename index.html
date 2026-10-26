@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика подій JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Практика подій JavaScript</h1>
+
+      <section>
+        <h2>Вибір кольору фону</h2>
+        <form id="color-form">
+          <p>Оберіть колір:</p>
+          <label>
+            <input type="radio" name="color" value="red" checked />
+            Червоний
+          </label>
+          <label>
+            <input type="radio" name="color" value="white" />
+            Білий
+          </label>
+          <label>
+            <input type="radio" name="color" value="green" />
+            Зелений
+          </label>
+        </form>
+      </section>
+
+      <section>
+        <h2>Привітання</h2>
+        <label for="name-input">Ваше ім'я?</label>
+        <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+        <p>Привіт, <span id="name-output">незнайомець</span>!</p>
+      </section>
+
+      <section>
+        <h2>Перевірка довжини</h2>
+        <label for="validation-input">Введіть 6 символів:</label>
+        <input
+          type="text"
+          id="validation-input"
+          data-length="6"
+          placeholder="Введи 6 символів"
+        />
+      </section>
+
+      <section>
+        <h2>Розмір тексту</h2>
+        <label for="font-size-control">Перемістіть повзунок:</label>
+        <input id="font-size-control" type="range" min="10" max="100" value="16" />
+        <p><span id="text">Абракадабра!</span></p>
+      </section>
+    </main>
+  </body>
+</html>
